@@ -1,0 +1,27 @@
+:root {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    --accent-color: linear-gradient(90deg, #7000A0 0.01%, #A0009B 100%);
+    --purple-border: #A0009B;
+
+
+}
+
+[data-theme="light"] {
+    --text-color: #121215;
+    --inverse-text-color: #EEEEF0;
+    --primary-color: linear-gradient(117deg, #EEEEF0 0%, #CCCCD8 100%);
+    --secondary-color: #D166FF;
+    --inverse-section-color: #121215;
+
+}
+
+[data-theme="dark"] {
+    --text-color: #fff;
+    --inverse-text-color: #000;
+    --primary-color: linear-gradient(117deg, #121215 0%, #262629 100%);
+    --secondary-color: #7000A0;
+    --inverse-section-color: #fff;
+}
