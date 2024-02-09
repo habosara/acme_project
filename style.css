@@ -25,3 +25,31 @@
     --secondary-color: #7000A0;
     --inverse-section-color: #fff;
 }
+
+body {
+    background: var(--primary-color);
+}
+
+h1 {
+    font-size: calc(48px + (64 - 48) * ((100vw - 375px) / (1440 - 375)));
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 15px;
+    color: var(--text-color);
+    margin: 0;
+}
+
+h2 {
+    font-size: calc(40px + (54 - 40) * ((100vw - 375px) / (1440 - 375)));
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.homepage a {
+    text-decoration: none;
+    color: var(--text-color);
+}
