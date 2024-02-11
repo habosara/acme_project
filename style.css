@@ -32,6 +32,14 @@ body {
     padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
 .homepage {
     display: flex;
     justify-content: center;
@@ -48,7 +56,6 @@ h1 {
     /*letter-spacing: 15px;*/
     letter-spacing: calc(10px + (15 - 10) * ((100vw - 375px) / (1440 - 375)));
     color: var(--text-color);
-    margin: 0;
 }
 
 h2 {
@@ -57,7 +64,6 @@ h2 {
     font-weight: 100;
     line-height: normal;
     color: var(--text-color);
-    margin: 0;
 }
 
 .homepage-container {
@@ -122,11 +128,12 @@ nav {
     font-weight: 700;
 }
 
-main {
+/*main {
     padding: 80px;
-}
+}*/
 
 .hero {
+    padding: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -147,7 +154,6 @@ main {
     font-size: calc(50px + (120 - 50) * ((100vw - 375px) / (1440 - 375)));
     font-weight: 400;
     position: absolute;
-    margin: 0;
     left: 524px;
 }
 
@@ -156,6 +162,76 @@ main {
     color: var(--text-color);
     font-size: 24px;
     font-weight: 400;
+}
+
+.section-title {
+    color: var(--text-color);
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+}
+
+.section-title.inverse {
+    color: var(--inverse-text-color);
+}
+
+.reviews {
+    background-color: var(--inverse-section-color);
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews-wrapper {
+    flex: 0 1 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    gap: 50px;
+}
+
+.reviewer {
+    width: 168px;
+    height: 168px;
+    border-radius: 90px;
+}
+
+.reviewer.author1 {
+    background: url(images/author1.png) no-repeat;
+    background-size: cover;
+}
+
+.reviewer.author2 {
+    background: url(images/author2.png) no-repeat;
+    background-size: cover;
+}
+
+.reviewer.author3 {
+    background: url(images/author3.png) no-repeat;
+    background-size: cover;
+}
+
+.review-content {
+    color: var(--inverse-text-color);
+    font-size: 30px;
+    font-size: calc(24px + (30 - 24) * ((100vw - 375px) / (1440 - 375)));
+    font-style: italic;
+    font-weight: 400;
+}
+
+.review-author {
+    color: var(--secondary-color);
+    align-self: flex-end;
+    font-size: 24px;
 }
 
 @media screen and (max-width: 812px) {
