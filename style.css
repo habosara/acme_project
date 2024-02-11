@@ -109,6 +109,11 @@ nav {
     font-weight: 100;
 }
 
+.nav-logo a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 .menu-container {
     display: flex;
     list-style-type: none;
@@ -167,6 +172,10 @@ section {
     color: var(--text-color);
     font-size: 24px;
     font-weight: 400;
+}
+
+.hero-link:hover {
+    color: var(--secondary-color);
 }
 
 .section-title {
@@ -390,6 +399,12 @@ textarea {
     font-weight: 700;
     margin-top: 60px;
     margin-left: auto;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: var(--purple-border);
+
 }
 
 footer {
