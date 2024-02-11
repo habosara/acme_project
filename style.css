@@ -122,6 +122,42 @@ nav {
     font-weight: 700;
 }
 
+main {
+    padding: 80px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-img {
+    background: url(images/hero-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 628px;
+    height: 471px;
+    position: relative;
+}
+
+.hero-title {
+    color: var(--text-color);
+    text-shadow: 0px 0px 15px #FFF;
+    font-size: calc(50px + (120 - 50) * ((100vw - 375px) / (1440 - 375)));
+    font-weight: 400;
+    position: absolute;
+    margin: 0;
+    left: 524px;
+}
+
+.hero-link {
+    align-self: flex-end;
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 400;
+}
+
 @media screen and (max-width: 812px) {
     .divider {
         height: 1px;
