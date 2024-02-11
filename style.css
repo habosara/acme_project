@@ -5,6 +5,7 @@
     font-size: 24px;
     --accent-color: linear-gradient(90deg, #7000A0 0.01%, #A0009B 100%);
     --purple-border: #A0009B;
+    --form-field-color: #888;
 
 
 }
@@ -311,6 +312,84 @@ ul {
 
 .bold {
     font-weight: 700;
+}
+
+.contact-form {
+    background: var(--inverse-section-color);
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "name e-mail phone"
+        "message message message";
+    justify-content: space-between;
+    gap: 26px;
+}
+
+.name {
+    grid-area: name;
+    color: var(--inverse-text-color);
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.e-mail {
+    grid-area: e-mail;
+    color: var(--inverse-text-color);
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.phone {
+    grid-area: phone;
+    color: var(--inverse-text-color);
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.message {
+    grid-area: message;
+    color: var(--inverse-text-color);
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.form-container input,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: unset;
+    border-bottom: 4px solid var(--purple-border);
+    background: var(--form-field-color);
+    height: 50px;
+}
+
+.submit-btn {
+    appearance: none;
+    border: unset;
+    display: flex;
+    background: var(--accent-color);
+    padding: 15px 45px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-left: auto;
 }
 
 footer {
