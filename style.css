@@ -234,6 +234,21 @@ nav {
     font-size: 24px;
 }
 
+.intro {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.intro-content p {
+    padding-bottom: 24px;
+    color: var(--text-color);
+    font-size: 24px;
+    font-size: calc(18px + (24 - 18) * ((100vw - 375px) / (1440 - 375)));
+    font-weight: 400;
+}
+
 @media screen and (max-width: 812px) {
     .divider {
         height: 1px;
