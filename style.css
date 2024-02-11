@@ -16,7 +16,7 @@
     --primary-color: linear-gradient(117deg, #EEEEF0 0%, #CCCCD8 100%);
     --secondary-color: #D166FF;
     --inverse-section-color: #121215;
-
+    --text-shadow: rgba(255, 255, 255, 1);
 }
 
 [data-theme="dark"] {
@@ -25,6 +25,7 @@
     --primary-color: linear-gradient(117deg, #121215 0%, #262629 100%);
     --secondary-color: #7000A0;
     --inverse-section-color: #fff;
+    --text-shadow: rgba(255, 255, 255, 0);
 }
 
 body {
@@ -93,6 +94,25 @@ h2 {
     gap: 15px;
 }
 
+#theme-btn {
+    appearance: none;
+    border: unset;
+    background-color: var(--inverse-section-color);
+    color: var(--inverse-text-color);
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage #theme-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
 nav {
     display: flex;
     max-width: 100%;
@@ -112,6 +132,12 @@ nav {
 .nav-logo a {
     text-decoration: none;
     color: var(--text-color);
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
 }
 
 .menu-container {
@@ -160,7 +186,7 @@ section {
 
 .hero-title {
     color: var(--text-color);
-    text-shadow: 0px 0px 15px #FFF;
+    text-shadow: 0px 0px 15px var(--text-shadow);
     font-size: calc(50px + (120 - 50) * ((100vw - 375px) / (1440 - 375)));
     font-weight: 400;
     position: absolute;
