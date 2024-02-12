@@ -367,6 +367,7 @@ section {
 .contact-container {
     display: flex;
     gap: 80px;
+    flex-wrap: wrap;
 }
 
 .contact-content {
@@ -404,7 +405,7 @@ ul {
 
 .form-container {
     display: grid;
-    grid-template-columns: 360px 360px 360px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: auto auto;
     gap: 0px 0px;
     grid-template-areas:
@@ -546,6 +547,10 @@ footer {
         justify-content: center;
         gap: 64px;
     }
+
+    .contact-container {
+        gap: 64px;
+    }
 }
 
 @media screen and (max-width: 812px) {
@@ -617,6 +622,18 @@ footer {
         justify-content: center;
         gap: 64px;
     }
+
+    .form-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 26px;
+        grid-template-areas:
+            "name"
+            "e-mail"
+            "phone"
+            "message";
+    }
+
 }
 
 @media screen and (max-width: 375px) {
