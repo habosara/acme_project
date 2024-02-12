@@ -1,3 +1,4 @@
+//MENU ITEMS ACTIVE
 const currentPageUrl = window.location.pathname;
 
 const menuItems = document.querySelectorAll('.menu-item');
@@ -55,3 +56,38 @@ button.addEventListener("click", (event) => {
 
     currentThemeSetting = newTheme;
 }); 
+
+//MOBILE MENU
+$('.menu-toggle').click(function(){
+   $(".menu-container").toggleClass("mobile-nav");
+   $(this).toggleClass("is-active");
+});
+
+//MENU LOGO
+window.onload = function() {
+    // Function to check viewport width and update the content accordingly
+    function updateNavLogo() {
+        var viewportWidth = window.innerWidth;
+        var navLogo = document.querySelector('.nav-logo');
+        
+        if (viewportWidth <= 375) {
+            // If viewport width is less than or equal to 375px, remove "Inc." from the text
+            var anchorTag = navLogo.querySelector('a');
+            if (anchorTag.textContent.includes("Inc.")) {
+                anchorTag.textContent = anchorTag.textContent.replace("Inc.", "");
+            }
+        } else {
+            // If viewport width is greater than 375px and "Inc." is not present, add it back
+            var anchorTag = navLogo.querySelector('a');
+            if (!anchorTag.textContent.includes("Inc.")) {
+                anchorTag.textContent += " Inc.";
+            }
+        }
+    }
+
+    // Call the function initially
+    updateNavLogo();
+
+    // Listen for window resize event to update the content dynamically
+    window.addEventListener('resize', updateNavLogo);
+};
