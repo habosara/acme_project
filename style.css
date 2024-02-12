@@ -224,6 +224,7 @@ section {
 .reviews-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .reviews-wrapper {
@@ -310,7 +311,6 @@ section {
 
 .services-content {
     color: var(--text-color);
-    text-align: center;
     font-size: 24px;
     font-weight: 400;
 }
@@ -452,6 +452,50 @@ footer {
     letter-spacing: calc(50px + (200 - 50) * ((100vw - 375px) / (1440 - 375)));
     /*margin-right: 200px;*/
     margin-right: calc(-50px + (-200 - -50) * ((100vw - 375px) / (1440 - 375)));
+}
+
+@media screen and (min-width: 1830px) {
+    .services-wrapper {
+        flex: 1 1 30%;
+    }
+
+    .form-container {
+        grid-template-columns: 30% 30% 30%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    section {
+        padding: 32px;
+    }
+
+    section.hero {
+        padding: 0;
+    }
+
+    .hero-img {
+        width: 100%;
+    }
+
+    .hero-title {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #fff;
+        text-shadow: none;
+    }
+
+    .hero-link {
+        display: none;
+    }
+
+    .reviews-container {
+        justify-content: center;
+        gap: 64px;
+    }
 }
 
 @media screen and (max-width: 812px) {
