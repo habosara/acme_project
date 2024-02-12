@@ -18,6 +18,7 @@
     --inverse-section-color: #121215;
     --text-shadow: rgba(255, 255, 255, 1);
     --menu-bg: #fff;
+    --icon-color: none;
 }
 
 [data-theme="dark"] {
@@ -28,6 +29,7 @@
     --inverse-section-color: #fff;
     --text-shadow: rgba(255, 255, 255, 0);
     --menu-bg: #34343d;
+    --icon-color: invert(100%) sepia(0%) saturate(0%) hue-rotate(354deg) brightness(106%) contrast(101%);
 }
 
 body {
@@ -349,6 +351,7 @@ section {
 .services-img {
     height: 64px;
     width: auto;
+    filter: var(--icon-color);
 }
 
 .services-title {
