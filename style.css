@@ -398,6 +398,10 @@ ul {
     padding-bottom: 0;
 }
 
+.contact-map {
+    flex: 1 1 450px;
+}
+
 .bold {
     font-weight: 700;
 }
@@ -462,6 +466,9 @@ textarea {
     border: unset;
     border-bottom: 4px solid var(--purple-border);
     background: var(--form-field-color);
+}
+
+.form-container input {
     height: 50px;
 }
 
@@ -518,6 +525,13 @@ footer {
     }
 }
 
+@media screen and (max-width: 1390px) {
+
+    .contact-content {
+        flex: 1 1 40%;
+    }
+}
+
 @media screen and (max-width: 1024px) {
 
     section {
@@ -553,6 +567,7 @@ footer {
 
     .contact-container {
         gap: 64px;
+        flex-direction: column;
     }
 }
 
@@ -672,6 +687,9 @@ footer {
         letter-spacing: 2px;
     }
 
+    .contact-map {
+        flex: 1 1 400px;
+    }
 
 
 }
