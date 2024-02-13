@@ -1,11 +1,11 @@
 //MENU ITEMS ACTIVE
-const currentPageUrl = window.location.pathname;
+const currentPageUrl = window.location.href;
 
 const menuItems = document.querySelectorAll('.menu-item');
 
 menuItems.forEach(item => {
 
-    if (item.getAttribute('href') === currentPageUrl) {
+    if (item.href === currentPageUrl) {
         item.classList.add('active');
     }
 });
