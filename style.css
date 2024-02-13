@@ -581,10 +581,10 @@ footer {
         width: 100%;
     }
 
-    .homepage {
+    /*.homepage {
         height: 100%;
         padding: 153px 0;
-    }
+    }*/
 
     .homepage-container {
         justify-content: center;
@@ -665,10 +665,10 @@ footer {
 
 @media screen and (max-width: 375px) {
 
-    .homepage {
+    /*.homepage {
         height: auto;
         padding: 153px 0;
-    }
+    }*/
 
     .homepage-container {
         flex-direction: column;
